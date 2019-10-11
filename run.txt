@@ -1,0 +1,8 @@
+set FLASK_APP=run.py
+
+flask run
+
+set FLASK_DEBUG=1
+
+
+add app/uploads/ folder to project
