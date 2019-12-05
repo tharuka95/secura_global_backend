@@ -43,7 +43,6 @@ Django==2.2
 dnspython==1.16.0
 docutils==0.14
 dominate==2.3.5
-ember==0.1.0
 entrypoints==0.3
 Flask==1.0.2
 Flask-BabelEx==0.9.3
