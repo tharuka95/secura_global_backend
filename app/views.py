@@ -232,7 +232,7 @@ def index():
         X_to_push = test
         X_testing = test.drop(['Name'], axis=1)
         clf = joblib.load(
-            'D:/Final_Year_Project/APP/app/MLmodels/RFC_model.pkl')
+            './MLmodels/RFC_model.pkl')
         X_testing_scaled = clf.named_steps['scale'].transform(X_testing)
         X_testing_pca = clf.named_steps['pca'].transform(X_testing_scaled)
         y_testing_pred = clf.named_steps['clf'].predict_proba(X_testing_pca)
