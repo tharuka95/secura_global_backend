@@ -16,12 +16,12 @@ import sqlite3
 from datetime import datetime, timedelta
 
 content = []
-with open('D:/Final_Year_Project/APP/app/dump/suspicious_functions.txt') as f:
+with open('./dump/suspicious_functions.txt') as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 
 name_packers = []
-with open('D:/Final_Year_Project/APP/app/dump/name_packers.txt', encoding="utf8") as f:
+with open('./dump/name_packers.txt', encoding="utf8") as f:
     name_packers = f.readlines()
 name_packers = [x.strip() for x in name_packers]
 
