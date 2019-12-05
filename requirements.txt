@@ -109,7 +109,7 @@ matplotlib==3.0.2
 mccabe==0.6.1
 misaka==2.1.1
 mistune==0.8.4
-mitmproxy==3.0.2
+mitmproxy==4.0.4
 mkl-fft==1.0.12
 mkl-random==1.0.2
 mock==2.0.0
