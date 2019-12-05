@@ -16,12 +16,12 @@ import sqlite3
 from datetime import datetime, timedelta
 
 content = []
-with open('./dump/suspicious_functions.txt') as f:
+with open('app/dump/suspicious_functions.txt') as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 
 name_packers = []
-with open('./dump/name_packers.txt', encoding="utf8") as f:
+with open('app/dump/name_packers.txt', encoding="utf8") as f:
     name_packers = f.readlines()
 name_packers = [x.strip() for x in name_packers]
 
@@ -232,7 +232,7 @@ def index():
         X_to_push = test
         X_testing = test.drop(['Name'], axis=1)
         clf = joblib.load(
-            './MLmodels/RFC_model.pkl')
+            'MLmodels/RFC_model.pkl')
         X_testing_scaled = clf.named_steps['scale'].transform(X_testing)
         X_testing_pca = clf.named_steps['pca'].transform(X_testing_scaled)
         y_testing_pred = clf.named_steps['clf'].predict_proba(X_testing_pca)
@@ -272,7 +272,7 @@ def test():
     X_to_push = test
     X_testing = test.drop(['Name'], axis=1)
     clf = joblib.load(
-        'D:/Final_Year_Project/APP/app/MLmodels/RFC_model.pkl')
+        'app/MLmodels/RFC_model.pkl')
     X_testing_scaled = clf.named_steps['scale'].transform(X_testing)
     X_testing_pca = clf.named_steps['pca'].transform(X_testing_scaled)
     y_testing_pred = clf.named_steps['clf'].predict_proba(X_testing_pca)
