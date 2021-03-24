@@ -171,7 +171,7 @@ requests==2.21.0
 requests-futures==0.9.9
 rfc6266==0.0.4
 rope==0.14.0
-rsa==4.0
+rsa==4.1
 ruamel.yaml==0.15.94
 scikit-learn==0.20.3
 scipy==1.2.1
